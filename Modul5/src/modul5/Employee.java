@@ -6,19 +6,29 @@ package modul5;
  * @author Rolan Firmansyah
  */
 public class Employee {
-    class Employee{
-...
-    int payAmount() {
-        switch (getType()) {
-            case EmployeeType.ENGINEER:
-                return _monthlySalary;
-            case EmployeeType.SALESMAN:
-                return _monthlySalary + _commission;
-            case EmployeeType.MANAGER:
-                return _monthlySalary + _bonus;
-            default:
-            throw new Exception("Incorrect Employee");
-            }
+    private int getMonthlySalary() {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+
+    private int getCommission() {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+
+    private int getBonus() {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+    abstract class EmployeeType {
+        abstract int payAmount(Employee emp);
+    }
+    class Salesman {
+        int payAmount(Employee emp) {
+            return emp.getMonthlySalary() + emp.getCommission();
         }
     }
+    class Manager {
+        int payAmount(Employee emp) {
+            return emp.getMonthlySalary() + emp.getBonus();
+        }
+    }
+
 }
