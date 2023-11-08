@@ -1,14 +1,13 @@
 
-
+import java.util.Date;
 /**
  *
  * @author Rolan Firmansyah
  */
 public class Customer {
-    class DtaRcrd102 {
-private Date genymdhms;
-private Date modymdhms;
-private final String pszqint = "102";
-/* ... */
-}
+    
+        private Date genymdhms;
+        private Date modymdhms;
+        private final String pszqint = "102";
+        /* ... */      
 }
