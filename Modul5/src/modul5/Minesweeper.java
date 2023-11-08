@@ -1,16 +1,23 @@
 
 package modul5;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Rolan Firmansyah
  */
 public class Minesweeper {
-    public list<int[]> getHem(){
-        List<int[]> list1 = new ArrayList<int[]>(); 
-        for (int[] x : thelist)
-            if (x[0] == 4)
-                list.add(x);
-        return list1;
+    public final static int STATUS_VALUE = 0;
+    public final static int FLAGGED = 4;
+    
+    public List<int[]> getFlaggedCells() {
+        List<int[]> flaggedCells = new ArrayList<int[]>();
+        Iterable<int[]> gameBoard = null;
+            for (int[] cell : gameBoard)
+                if (cell[STATUS_VALUE] == FLAGGED)
+                    flaggedCells.add(cell);
+                return flaggedCells;
     }
 }
