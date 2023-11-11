@@ -9,10 +9,18 @@ package Tugas;
  * @author Rolan Firmansyah
  */
 public class Tugas1 {
-    /**
+     /**
     * @param args the command line arguments
     */
     public static void main(String[] args) {
-    System.out.println(3/0);
+        int numerator = 3;
+        int denominator = 0;
+
+        if (denominator != 0) {
+            System.out.println(numerator / denominator);
+        } else {
+            System.out.println("Tidak bisa melakukan pembagian oleh nol.");
+            // Atau Anda bisa melakukan tindakan lain sesuai kebutuhan
+        }
     }
 }
