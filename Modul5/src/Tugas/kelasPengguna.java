@@ -9,9 +9,9 @@ package Tugas;
  * @author Rolan Firmansyah
  */
 public class kelasPengguna {
-    protected String n; //username
-    protected String p; //password
-    public void penyimpanan(String n, String p) {
+    protected String username; //username
+    protected String password; //password
+    public void penyimpanan(String username, String password) {
     // isi code
     }
 }
